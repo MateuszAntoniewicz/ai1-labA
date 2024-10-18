@@ -52,7 +52,7 @@ body{
     width: 10vw;
     height: 3vh;
     font-size: 120%;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
@@ -61,14 +61,16 @@ body{
     vertical-align: center;
 }
 
+.przycisk:hover{
+    background-color: rgba(21, 21, 30, 0.9);
+    transform: scale(1.1);
+}
+
+
 @media (max-width: 700px){
     .przycisk{
         flex: 1;
     }
-}
-
-.przycisk:hover{
-    background-color: #D50000;
 }
 
 .kontenerGlowny{
